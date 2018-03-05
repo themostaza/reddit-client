@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-scale infinite 6s linear;
+  height: 80px;
+}
+
+.App-header {
+  height: 80px;
+  padding: 20px;
+  color: white;
+}
+
+.App-search {
+  padding: 20px;
+}
+
+@keyframes App-logo-scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
