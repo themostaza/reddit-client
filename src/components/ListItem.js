@@ -35,8 +35,8 @@ export default class ListItem extends React.Component {
 }
 
 ListItem.propTypes = {
-  imageSource: PropTypes.string,
-  title: PropTypes.string,
-  author: PropTypes.string,
-  subreddit: PropTypes.string
+  imageSource: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  subreddit: PropTypes.string.isRequired
 };
