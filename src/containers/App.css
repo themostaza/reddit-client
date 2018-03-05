@@ -13,6 +13,11 @@
   color: white;
 }
 
+.App-search {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
 @keyframes App-logo-scale {
   0% {
     transform: scale(1);

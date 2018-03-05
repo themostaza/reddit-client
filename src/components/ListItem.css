@@ -18,12 +18,15 @@
   margin-left: 10px;
 }
 
+.ListItem-right-visible {
+}
+
 .ListItem-title {
   font-size: 1em;
   font-weight: bold;
 }
 
-.ListItem-autor-and-sub {
+.ListItem-author-and-sub {
   font-size: 0.7em;
 }
 

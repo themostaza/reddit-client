@@ -15,17 +15,11 @@ export default class ListItem extends React.Component {
   };
 
   render() {
-    const { imageSource, title, author, subreddit } = this.props;
+    const { imageSource, title, author, subreddit, ...otherProps } = this.props;
     return (
-      <div className={"ListItem"} onClick={this.toggleSelected}>
-        <img className={"ListItem-image"} src={imageSource} />
-        <div
-          className={`ListItem-right ${
-            this.state.isSelected
-              ? "ListItem-right-visible"
-              : "ListItem-right-hidden"
-          }`}
-        >
+      <div className={"ListItem"} {...otherProps}>
+        <img className={"ListItem-image"} src={imageSource} alt="" />
+        <div className={`ListItem-right`}>
           <p className="ListItem-title">{title}</p>
           <p className="ListItem-author-and-sub">{`${author} - ${subreddit}`}</p>
         </div>
@@ -38,5 +32,6 @@ ListItem.propTypes = {
   imageSource: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
-  subreddit: PropTypes.string.isRequired
+  subreddit: PropTypes.string.isRequired,
+  onClick: PropTypes.func
 };
